@@ -23,8 +23,6 @@ export default function ClientRegister({
   endDate,
   plan,
 }: ClientRegistrationProps) {
-  const registrationDate = new Date();
-
   const { setClients, clients } = React.useContext(ClientContext);
 
   const onHandleDeleteClient = () => {
@@ -38,11 +36,7 @@ export default function ClientRegister({
   return (
     <>
       <tr>
-        <td>{`${registrationDate.getDate()}/${
-          (registrationDate.getMonth() + 1).toString().length === 1
-            ? `0${registrationDate.getMonth() + 1}`
-            : registrationDate.getMonth() + 1
-        }/${registrationDate.getFullYear()} ${registrationDate.getHours()}:${registrationDate.getMinutes()}:${registrationDate.getSeconds()}`}</td>
+        <td>{new Intl.DateTimeFormat('pt-BR').format(new Date())}</td>
         <td>
           {client
             .split(' ')
