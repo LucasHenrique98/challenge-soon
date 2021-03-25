@@ -57,12 +57,7 @@ export default function NewClientModal({
           warranty_date: new Date(),
         },
         plan: {
-          product:
-            data.plan_type === 'Plano A'
-              ? '43274268472368472'
-              : data.plan_type === 'Plano B'
-              ? '47237847238472343'
-              : '31231231231212315',
+          product: data.plan_type,
           begin_date: data.plan_begin_date,
           end_date: data.plan_end_date,
         },
@@ -72,6 +67,7 @@ export default function NewClientModal({
         const newClient = { id: response.data.id, ...clientData };
 
         setClients([...clients, newClient]);
+        onRequestClose();
       });
   };
 

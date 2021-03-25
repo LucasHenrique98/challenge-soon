@@ -21,7 +21,7 @@ new Server({
             warranty_date: '2020-01-15T00:00:00.000Z',
           },
           plan: {
-            product: '312312312312',
+            product: 'Plano C',
             begin_date: '2020-01-15',
             end_date: '2021-01-15',
           },
@@ -40,7 +40,7 @@ new Server({
             warranty_date: '2020-01-15T00:00:00.000Z',
           },
           plan: {
-            product: '312312312312',
+            product: 'Plano C',
             begin_date: '2021-03-23',
             end_date: '2022-01-15',
           },
@@ -59,7 +59,7 @@ new Server({
             warranty_date: '2020-01-15T00:00:00.000Z',
           },
           plan: {
-            product: '312312312312',
+            product: 'Plano C',
             begin_date: '2021-03-23',
             end_date: '2022-01-15',
           },

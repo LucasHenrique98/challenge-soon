@@ -39,7 +39,9 @@ export default function ClientRegister({
     <>
       <tr>
         <td>{`${registrationDate.getDate()}/${
-          registrationDate.getMonth() + 1
+          (registrationDate.getMonth() + 1).toString().length === 1
+            ? `0${registrationDate.getMonth() + 1}`
+            : registrationDate.getMonth() + 1
         }/${registrationDate.getFullYear()} `}</td>
         <td>
           {client
