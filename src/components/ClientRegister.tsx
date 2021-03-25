@@ -42,7 +42,7 @@ export default function ClientRegister({
           (registrationDate.getMonth() + 1).toString().length === 1
             ? `0${registrationDate.getMonth() + 1}`
             : registrationDate.getMonth() + 1
-        }/${registrationDate.getFullYear()} `}</td>
+        }/${registrationDate.getFullYear()} ${registrationDate.getHours()}:${registrationDate.getMinutes()}:${registrationDate.getSeconds()}`}</td>
         <td>
           {client
             .split(' ')

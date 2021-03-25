@@ -154,11 +154,8 @@ export default function NewClientModal({
             <input
               ref={register({ required: true })}
               type="text"
-              onFocus={(e) => {
-                e.currentTarget.type = 'date';
-              }}
               name="car_warranty_date"
-              placeholder="Data de garantia"
+              placeholder="Data de garantia (dd/mm/aaaa)"
             />
           </div>
 
@@ -169,21 +166,15 @@ export default function NewClientModal({
             <input
               ref={register({ required: true })}
               type="text"
-              onFocus={(e) => {
-                e.currentTarget.type = 'date';
-              }}
               name="plan_begin_date"
-              placeholder="Data de início"
+              placeholder="Data de início (dd/mm/aaaa)"
             />
 
             <input
               ref={register({ required: true })}
               type="text"
-              onFocus={(e) => {
-                e.currentTarget.type = 'date';
-              }}
               name="plan_end_date"
-              placeholder="Data final"
+              placeholder="Data final (dd/mm/aaaa)"
             />
 
             <select ref={register({ required: true })} name="plan_type">

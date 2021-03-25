@@ -22,8 +22,8 @@ new Server({
           },
           plan: {
             product: 'Plano C',
-            begin_date: '2020-01-15',
-            end_date: '2021-01-15',
+            begin_date: '15/01/2020',
+            end_date: '15/01/2021',
           },
         },
         {
@@ -41,8 +41,8 @@ new Server({
           },
           plan: {
             product: 'Plano C',
-            begin_date: '2021-03-23',
-            end_date: '2022-01-15',
+            begin_date: '23/03/2021',
+            end_date: '12/01/2022',
           },
         },
         {
@@ -60,8 +60,8 @@ new Server({
           },
           plan: {
             product: 'Plano C',
-            begin_date: '2021-03-23',
-            end_date: '2022-01-15',
+            begin_date: '23/03/2021',
+            end_date: '01/15/2022',
           },
         },
       ],
